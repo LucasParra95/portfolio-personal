@@ -1,0 +1,111 @@
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { Download } from "lucide-react"
+
+export function AboutSection() {
+  return (
+    <section id="about" className="py-20 md:py-32 bg-muted/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16 text-balance">Sobre Mi</h2>
+
+        <div className="max-w-4xl mx-auto">
+          {/* Text Content */}
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground mb-12">
+            <p>
+              <strong className="text-foreground">La curiosidad siempre ha sido mi motor.</strong> Desde chico
+              desmontaba juguetes para entender sus mecanismos, una costumbre que marcó el inicio de mi interés 
+              por la tecnología y la resolución de problemas.
+            </p>
+
+            <p>
+              Estudié <strong className="text-foreground">Ingeniería Mecánica</strong> en la Universidad Nacional de La
+              Plata, donde desarrollé un pensamiento lógico y una mentalidad analítica que hoy aplico en el desarrollo de software.
+               Esa formación me enseñó a abordar los desafíos con <strong className="text-foreground">método, precisión y creatividad.</strong>
+            </p>
+
+            <p>
+             Con el tiempo, descubrí en la programación una forma de unir mis intereses técnicos con mi deseo de crear soluciones útiles e innovadoras. 
+             Me certifiqué como{" "}<strong className="text-foreground">Full Stack Developer</strong> en Henry, 
+             lo que me permitió explorar un mundo de posibilidades dentro del desarrollo web y la tecnología aplicada a la optimización de procesos.
+            </p>
+
+            <p>
+              También he complementado mi perfil con un curso de{" "}
+              <strong className="text-foreground">Análisis de Datos</strong>, con el objetivo de comprender mejor la información detrás de cada proyecto 
+              y brindar soluciones más eficientes y fundamentadas.
+            </p>
+
+            <p>
+              Hoy, combino mi <strong className="text-foreground">capacidad analítica</strong> con una mirada creativa y orientada al detalle para desarrollar herramientas tecnológicas que optimizan procesos, impulsan la toma de decisiones y mejoran la experiencia del <strong className="text-foreground">usuario</strong>.
+            </p>
+          </div>
+
+          <div className="flex justify-center mb-24">
+            <Button size="lg" variant="default" className="group" asChild>
+              <a href="/CV LucasParra.pdf" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+                Descargar CV
+              </a>
+            </Button>
+          </div>
+        </div>
+
+        {/* Timeline */}
+        <div className="mt-24">
+          <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">Educación y Experiencia</h3>
+
+          <div className="relative max-w-4xl mx-auto">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
+
+            <div className="space-y-12">
+              {[
+                {
+                  year: "2009-2013",
+                  title: "Bachiller en Ciencias Exactas y Naturales",
+                  description: "Instituto Primo Capraro, Bariloche.",
+                },
+                {
+                  year: "2013-2021",
+                  title: "Tercer año de Ingeniería Mecánica",
+                  description: "Facultad de Ingeniería Universidad Nacional de La Plata",
+                },
+                {
+                  year: "2022",
+                  title: "Introducción a la programación",
+                  description: "Fundación Telefónica",
+                },
+                {
+                  year: "2022-2023",
+                  title: "Full Stack Web Developer",
+                  description: "Henry Bootcamp. 700 horas de cursado teórico-práctico",
+                },
+                {
+                  year: "2024",
+                  title: "Fundamentos de Data Analytics",
+                  description: "Certificado otorgado por IBM y Guayerd por 255 horas de cursado y práctica profesional",
+                },
+              ].map((item, index) => (
+                <Card
+                  key={index}
+                  className={`relative p-6 md:p-8 md:w-[calc(50%-2rem)] ${
+                    index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
+                  }`}
+                >
+                  <div
+                    className={`absolute hidden md:block top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background ${
+                      index % 2 === 0 ? "-right-[2.125rem]" : "-left-[2.125rem]"
+                    }`}
+                  />
+                  <h4 className="text-xl md:text-2xl font-bold text-primary mb-2">{item.year}</h4>
+                  <h5 className="text-lg font-semibold mb-2">{item.title}</h5>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
