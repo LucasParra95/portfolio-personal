@@ -73,13 +73,13 @@ export function ProjectsSection() {
               key={index}
               className="group overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col"
             >
-              {project.image && (
-                <CardImage
-                  src={project.image}
-                  alt={project.title}
-                />
-              )}
               <CardHeader className="pb-4">
+                {project.image && (
+                  <CardImage
+                    src={project.image}
+                    alt={project.title}
+                  />
+                )}
                 <CardTitle className="text-2xl mb-3">{project.title}</CardTitle>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (

@@ -92,7 +92,12 @@ function CardImage({
     <div
       data-slot="card-image"
       className={cn(
-        "absolute top-3 right-3 w-40 h-30 pointer-events-none",
+        // Mobile: posición normal + altura fija requerida por "fill"
+        "relative w-full h-48 mt-4 block",
+
+        // Desktop: posición absoluta con tus tamaños originales
+        "md:absolute md:top-3 md:right-3 md:w-40 md:h-30 md:mt-0 md:pointer-events-none",
+
         className
       )}
     >
