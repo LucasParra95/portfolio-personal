@@ -34,16 +34,16 @@ const projects = [
     title: "Zanutto Estudio",
     image: "/projects/Zanutto.jpg",
     description:
-      'Proyecto individual desarrollado como una práctica dentro de Henry Bootcamp. Desarrollado utilizando React para el Front End. Todos los componentes fueron desarrollados con CSS sin uso de librerías externas. La Aplicación consume datos de una API ("OpenWeather").',
+      'Sitio web profesional desarrollado para un estudio jurídico, incluyendo un sistema de turnos para múltiples sucursales. La plataforma permite gestionar disponibilidad, asignación de citas y administración interna, ofreciendo una experiencia clara y ágil tanto para los clientes como para el estudio.',
     github: "https://github.com/zodieth/zanuttoestudio",
     demo: "http://zanuttoestudio.vercel.app/",
-    tags: ["React", "Next.js", "MongoDB", "Javascript"],
+    tags: ["React", "Next.js", "MongoDB", "Node.js"],
   },
   {
     title: "Hotel Océano",
     image: "/projects/Oceano.jpg",
     description:
-      'Proyecto individual desarrollado como una práctica dentro de Henry Bootcamp. Desarrollado utilizando React para el Front End. Todos los componentes fueron desarrollados con CSS sin uso de librerías externas. La Aplicación consume datos de una API ("OpenWeather").',
+      'Sitio web optimizado para potenciar la presencia digital del hotel y aumentar la captación de reservas. Incluye información comercial clara, presentación de servicios, tarifas actualizadas y una galería atractiva que refuerza la propuesta de valor del establecimiento.',
     github: null,
     demo: "http://www.oceanohotel.com.ar/",
     tags: ["Next.js", "Tailwind", "Node.js","Docker"],
@@ -52,7 +52,7 @@ const projects = [
     title: "F5-Club",
     image: "/projects/f5club.jpg",
     description:
-      'Proyecto individual desarrollado como una práctica dentro de Henry Bootcamp. Desarrollado utilizando React para el Front End. Todos los componentes fueron desarrollados con CSS sin uso de librerías externas. La Aplicación consume datos de una API ("OpenWeather").',
+      'Aplicación web diseñada para organizar y gestionar turnos de fútbol 5 de manera eficiente. Permite crear partidos, asignar organizadores y participantes, administrar equipos, enviar notificaciones y manejar listas de espera, ofreciendo una experiencia simple y dinámica tanto para jugadores como para organizadores.',
     github: null,
     demo: "https://futbol-turnos-app.vercel.app/",
     tags: ["Typescript", "Tailwind", "Node.js","MongoDB"],
