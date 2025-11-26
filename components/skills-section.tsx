@@ -3,55 +3,55 @@ import { Card, CardContent } from "@/components/ui/card"
 const skills = [
   {
     name: "HTML",
-    icon: "/logos/html.png",
+    icon: "./logos/html.png",
     description:
       "HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpretar tanto por humanos como por máquinas.",
   },
   {
     name: "CSS",
-    icon: "/logos/css.png",
+    icon: "./logos/css.png",
     description:
       "Lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario.",
   },
   {
     name: "Javascript",
-    icon: "/logos/javascript.png",
+    icon: "./logos/javascript.png",
     description:
       "Todos los navegadores modernos interpretan el código JavaScript integrado en las páginas web. Para interactuar con una página web se provee al lenguaje JavaScript de una implementación del Document Object Model (DOM). Javascript es el único lenguaje de programación que entiende de forma nativa los navegadores.",
   },
   {
     name: "Typescript",
-    icon: "/logos/typescript.png",
+    icon: "./logos/typescript.png",
     description:
       "TypeScript es un lenguaje de programación de código abierto desarrollado por Microsoft que es un superconjunto de JavaScript. Su principal característica es que añade tipado estático y características de orientación a objetos para hacer que el desarrollo de aplicaciones grandes y complejas sea más robusto y fácil de mantener",
   },
   {
     name: "React",
-    icon: "/logos/react.png",
+    icon: "./logos/react.png",
     description:
       "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.",
   },
   {
     name: "Node.js",
-    icon: "/logos/node.png",
+    icon: "./logos/node.png",
     description:
       "Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto que fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables, como por ejemplo, servidores web.",
   },
   {
     name: "Next.js",
-    icon: "/logos/next.png",
+    icon: "./logos/next.png",
     description:
       "Next.js es un framework de React de código abierto que se utiliza para construir aplicaciones web de alto rendimiento, amigables con el SEO y de rápida implementación. Proporciona herramientas y optimizaciones adicionales para aplicaciones React permitiendo crear sitios web y aplicaciones dinámicas de forma eficiente y escalable. ",
   },
   {
     name: "MongoDB",
-    icon: "/logos/mongodb.png",
+    icon: "./logos/mongodb.png",
     description:
       "Es un sistema de base de datos NoSQL, orientado a documentos y de código abierto. En lugar de guardar los datos en tablas como se hace en las bases de datos relacionales, MongoDB guarda estructuras de datos BSON con un esquema dinámico.",
   },
   {
     name: "PostgreSQL",
-    icon: "/logos/postgresql.png",
+    icon: "./logos/postgresql.png",
     description:
       "PostgreSQL, también llamado Postgres, es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto. PostgreSQL permite que mientras un proceso escribe en una tabla, otros accedan a la misma tabla sin necesidad de bloqueos.",
   },

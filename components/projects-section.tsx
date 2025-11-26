@@ -5,7 +5,7 @@ import { Github, ExternalLink } from "lucide-react"
 const projects = [
   {
     title: "Countries App",
-    image: "/projects/countries.png",
+    image: "./projects/countries.png",
     description:
       'Proyecto individual desarrollado dentro de Henry Bootcamp. Desarrollo de una SPA (Single Page Application) utilizando React para el Front End y Redux como state management. Todos los componentes fueron desarrollados con CSS sin uso de librerías externas. La SPA consume datos de una API ("REST Countries").',
     github: "https://github.com/LucasParra95/PI-Countries-SoyHenry",
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "AllTech e-commerce",
-    image: "/projects/AllTech.jpg",
+    image: "./projects/AllTech.jpg",
     description:
       "Proyecto grupal desarrollado dentro de Henry Bootcamp. Diseño y desarrollo de un E-commerce dedicado a la venta de productos gaming cómo su principal fuente de ingresos y otros artículos electrónicos cómo fuente secundaria. Aplicación creada usando MongoDB y Mongoose junto con Node.js para el Back-End, mientras que para el Front-End se utilizó React, Redux, Chakra y Typescript.",
     github: "https://github.com/zodieth/CLIENT",
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Basket de Oficina",
-    image: "/projects/basketProject.jpg",
+    image: "./projects/basketProject.jpg",
     description:
       "Juego desarrollado en JavaScript a partir de uno existente, añadiendo funcionalidades al original, como son la lógica del ciclo de vida, el sistema del viento, o la implementación de un nuevo ciclo de juego.",
     github: "https://github.com/LucasParra95/Trash-Can-Basketball",
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     title: "Zanutto Estudio",
-    image: "/projects/Zanutto.jpg",
+    image: "./projects/Zanutto.jpg",
     description:
       'Sitio web profesional desarrollado para un estudio jurídico, incluyendo un sistema de turnos para múltiples sucursales. La plataforma permite gestionar disponibilidad, asignación de citas y administración interna, ofreciendo una experiencia clara y ágil tanto para los clientes como para el estudio.',
     github: "https://github.com/zodieth/zanuttoestudio",
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     title: "Hotel Océano",
-    image: "/projects/Oceano.jpg",
+    image: "./projects/Oceano.jpg",
     description:
       'Sitio web optimizado para potenciar la presencia digital del hotel y aumentar la captación de reservas. Incluye información comercial clara, presentación de servicios, tarifas actualizadas y una galería atractiva que refuerza la propuesta de valor del establecimiento.',
     github: null,
@@ -50,7 +50,7 @@ const projects = [
   },
   {
     title: "F5-Club",
-    image: "/projects/f5club.jpg",
+    image: "./projects/f5club.jpg",
     description:
       'Aplicación web diseñada para organizar y gestionar turnos de fútbol 5 de manera eficiente. Permite crear partidos, asignar organizadores y participantes, administrar equipos, enviar notificaciones y manejar listas de espera, ofreciendo una experiencia simple y dinámica tanto para jugadores como para organizadores.',
     github: null,
