@@ -42,7 +42,7 @@ export function AboutSection() {
 
           <div className="flex justify-center mb-24">
             <Button size="lg" variant="default" className="group" asChild>
-              <a href="/CV LucasParra.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/cv-lucas-parra.pdf" download="CV-Lucas-Parra.pdf" rel="noopener noreferrer">
                 <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
                 Descargar CV
               </a>
