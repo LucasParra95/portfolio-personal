@@ -19,7 +19,7 @@ export function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Create mailto link
-    const mailtoLink = `mailto:lucasandresparra@gmail.com?subject=Contacto desde Portfolio - ${formData.name}&body=${formData.message}%0D%0A%0D%0ADe: ${formData.name} (${formData.email})`
+    const mailtoLink = `mailto:parra.developer@gmail.com?subject=Contacto desde Portfolio - ${formData.name}&body=${formData.message}%0D%0A%0D%0ADe: ${formData.name} (${formData.email})`
     window.location.href = mailtoLink
   }
 
@@ -83,13 +83,13 @@ export function ContactSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <a
-                  href="mailto:lucasandresparra@gmail.com"
+                  href="mailto:parra.developer@gmail.com"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
-                  <span>lucasandresparra@gmail.com</span>
+                  <span>parra.developer@gmail.com</span>
                 </a>
               </CardContent>
             </Card>
