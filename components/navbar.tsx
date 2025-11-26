@@ -34,7 +34,7 @@ export function Navbar() {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "Sobre mi", href: "#about" },
-    { name: "Habilidades", href: "#skills" },
+    { name: "Tecnologías", href: "#technologies" },
     { name: "Proyectos", href: "#projects" },
     { name: "Contacto", href: "#contact" },
   ]
