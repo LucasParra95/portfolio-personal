@@ -54,54 +54,75 @@ export function AboutSection() {
         <div className="mt-24">
           <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">Educación y Experiencia</h3>
 
-          <div className="relative max-w-4xl mx-auto">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
+          <div className="relative w-full overflow-x-auto">
+            <div className="min-w-max px-4 md:px-8 pb-12">
+              <div className="relative pt-72 pb-72">
+                {/* Timeline Line - Horizontal in the middle */}
+                <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-border -translate-y-1/2 z-0" />
 
-            <div className="space-y-12">
-              {[
-                {
-                  year: "2009-2013",
-                  title: "Bachiller en Ciencias Exactas y Naturales",
-                  description: "Instituto Primo Capraro, Bariloche.",
-                },
-                {
-                  year: "2013-2021",
-                  title: "Tercer año de Ingeniería Mecánica",
-                  description: "Facultad de Ingeniería Universidad Nacional de La Plata",
-                },
-                {
-                  year: "2022",
-                  title: "Introducción a la programación",
-                  description: "Fundación Telefónica",
-                },
-                {
-                  year: "2022-2023",
-                  title: "Full Stack Web Developer",
-                  description: "Henry Bootcamp. 700 horas de cursado teórico-práctico",
-                },
-                {
-                  year: "2024",
-                  title: "Fundamentos de Data Analytics",
-                  description: "Certificado otorgado por IBM y Guayerd por 255 horas de cursado y práctica profesional",
-                },
-              ].map((item, index) => (
-                <Card
-                  key={index}
-                  className={`relative p-6 md:p-8 md:w-[calc(50%-2rem)] ${
-                    index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
-                  }`}
-                >
-                  <div
-                    className={`absolute hidden md:block top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background ${
-                      index % 2 === 0 ? "-right-[2.125rem]" : "-left-[2.125rem]"
-                    }`}
-                  />
-                  <h4 className="text-xl md:text-2xl font-bold text-primary mb-2">{item.year}</h4>
-                  <h5 className="text-lg font-semibold mb-2">{item.title}</h5>
-                  <p className="text-muted-foreground">{item.description}</p>
-                </Card>
-              ))}
+                <div className="relative flex justify-around">
+                  {[
+                    {
+                      year: "2013-2021",
+                      title: "Tercer año de Ingeniería Mecánica",
+                      description: "Facultad de Ingeniería Universidad Nacional de La Plata",
+                    },
+                    {
+                      year: "2022",
+                      title: "Introducción a la programación",
+                      description: "Fundación Telefónica",
+                    },
+                    {
+                      year: "2022-2023",
+                      title: "Full Stack Web Developer",
+                      description: "Henry Bootcamp. 700 horas de cursado teórico-práctico",
+                    },
+                    {
+                      year: "2024",
+                      title: "Fundamentos de Data Analytics",
+                      description: "Certificado otorgado por IBM y Guayerd por 255 horas de cursado y práctica profesional",
+                    },
+                  ].map((item, index) => {
+                    const isAbove = index % 2 === 0
+
+                    return (
+                      <div
+                        key={index}
+                        className="relative flex flex-col items-center flex-shrink-0"
+                        style={{ width: "288px" }}
+                      >
+                        {/* Card above the line */}
+                        {isAbove && (
+                          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full mt-4">
+                            <Card className="p-6 w-full">
+                              <h4 className="text-xl font-bold text-primary mb-2">{item.year}</h4>
+                              <h5 className="text-lg font-semibold mb-2">{item.title}</h5>
+                              <p className="text-muted-foreground text-sm">{item.description}</p>
+                            </Card>
+                          </div>
+                        )}
+
+                        {/* Dot on the line */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
+
+                        {/* Card below the line */}
+                        {!isAbove && (
+                          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full mb-4">
+                            <Card className="p-6 w-full">
+                              <h4 className="text-xl font-bold text-primary mb-2">{item.year}</h4>
+                              <h5 className="text-lg font-semibold mb-2">{item.title}</h5>
+                              <p className="text-muted-foreground text-sm">{item.description}</p>
+                            </Card>
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {/* Scroll Indicator */}
+              <div className="text-center mt-8 text-sm text-muted-foreground lg:hidden">← Desliza para ver más →</div>
             </div>
           </div>
         </div>
