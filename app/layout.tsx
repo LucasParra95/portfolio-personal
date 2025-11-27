@@ -18,6 +18,17 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYEN5QRZXH"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-PYEN5QRZXH');
+            `,
+          }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
           rel="stylesheet"
