@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { TechnologiesSection } from "@/components/technologies-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { ContactSection } from "@/components/contact-section"
+import { SkillsSection } from "@/components/skills-section"
 
 export default function PortfolioPage() {
   return (
@@ -13,6 +14,7 @@ export default function PortfolioPage() {
         <HeroSection />
         <AboutSection />
         <TechnologiesSection/>
+        <SkillsSection />
         <ProjectsSection />
         <ContactSection />
       </main>

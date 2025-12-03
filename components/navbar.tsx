@@ -35,6 +35,7 @@ export function Navbar() {
     { name: "Home", href: "#home" },
     { name: "Sobre mi", href: "#about" },
     { name: "Tecnologías", href: "#technologies" },
+    { name: "Competencias", href: "#skills" },
     { name: "Proyectos", href: "#projects" },
     { name: "Contacto", href: "#contact" },
   ]

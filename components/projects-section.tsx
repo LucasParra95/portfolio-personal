@@ -61,7 +61,7 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 md:py-32 bg-muted/30">
+    <section id="projects" className="py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16 text-balance">
           Algunos de mis Proyectos
