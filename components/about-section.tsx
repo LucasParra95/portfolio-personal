@@ -20,6 +20,12 @@ const timelineItems = [
   },
   {
     year: "2024",
+    title: "Algoritmos y Estructuras de Datos en JavaScript",
+    description:
+      "Desarrollo de habilidades en programación y resolución de problemas mediante JavaScript, completando 16 proyectos prácticos.",
+  },
+  {
+    year: "2024",
     title: "Fundamentos de Data Analytics",
     description:
       "Certificado otorgado por IBM y Guayerd por 255 horas de cursado y práctica profesional",
@@ -29,7 +35,7 @@ const timelineItems = [
 export function AboutSection() {
   return (
     <section id="about" className="py-20 md:py-32 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16 text-balance">
           Sobre Mi
         </h2>
