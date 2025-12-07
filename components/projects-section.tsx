@@ -36,7 +36,7 @@ const projects = [
     description:
       'Sitio web profesional desarrollado para un estudio jurídico, incluyendo un sistema de turnos para múltiples sucursales. La plataforma permite gestionar disponibilidad, asignación de citas y administración interna, ofreciendo una experiencia clara y ágil tanto para los clientes como para el estudio.',
     github: "https://github.com/zodieth/zanuttoestudio",
-    demo: "http://zanuttoestudio.vercel.app/",
+    demo: "https://zanuttoestudio.vercel.app/",
     tags: ["React", "Next.js", "MongoDB", "Node.js"],
   },
   {
