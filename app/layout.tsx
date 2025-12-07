@@ -6,7 +6,50 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Lucas Parra - Full Stack Developer",
   description:
-    "Portfolio profesional de Lucas Andres Parra, Full Stack Web Developer con experiencia en React, Node.js, MongoDB y PostgreSQL",
+    "Portfolio profesional de Lucas Andres Parra, Full Stack Web Developer",
+  metadataBase: new URL("https://lucasparra.dev.ar"),
+    keywords: [
+    "lucas parra",
+    "desarrollador web",
+    "full stack developer",
+    "react developer",
+    "next.js developer",
+    "typescript developer",
+    "javascript developer",
+    "node.js",
+    "express",
+    "mern",
+    "mongodb",
+    "postgresql",
+    "desarrollo de sitios web",
+    "aplicaciones web",
+    "sistemas de turnos",
+    "integraciones de pago",
+    "data analyst",
+    "data analytics",
+    "optimización web",
+    "accesibilidad web",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+    openGraph: {
+    title: "Lucas Parra - Full Stack Developer",
+    description:
+      "Portfolio profesional de Lucas Andres Parra, Full Stack Web Developer",
+    url: "https://lucasparra.dev.ar",
+    siteName: "Lucas Parra Portfolio",
+    type: "website",
+    locale: "es_AR",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Lucas Parra - Full Stack Developer",
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
