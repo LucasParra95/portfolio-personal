@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "es_AR",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Lucas Parra - Full Stack Developer",
@@ -60,6 +60,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYEN5QRZXH"></script>
         <script
           dangerouslySetInnerHTML={{
