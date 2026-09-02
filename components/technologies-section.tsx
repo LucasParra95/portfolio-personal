@@ -55,6 +55,24 @@ const technologies = [
     description:
       "PostgreSQL, también llamado Postgres, es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto. PostgreSQL permite que mientras un proceso escribe en una tabla, otros accedan a la misma tabla sin necesidad de bloqueos.",
   },
+  {
+    name: "Tailwind CSS",
+    icon: "./logos/tailwind.png",
+    description:
+      "Tailwind CSS es una biblioteca de estilos utilitaria que permite crear diseños responsivos y modernos de forma rápida y eficiente, sin tener que escribir código CSS desde cero.",
+  },
+  {
+    name: "Python",
+    icon: "./logos/python.png",
+    description:
+      "Python es un lenguaje de programación de alto nivel, interpretado y de código abierto. Es conocido por su sintaxis clara y legible, lo que lo hace ideal para principiantes y para el desarrollo rápido de aplicaciones.",
+  },
+  {
+    name: "Django",
+    icon: "./logos/django.png",
+    description:
+      "Django es un framework de desarrollo web de código abierto escrito en Python. Está diseñado para permitir el desarrollo rápido y limpio de aplicaciones web seguras y mantenibles.",
+  },
 ]
 
 export function TechnologiesSection() {

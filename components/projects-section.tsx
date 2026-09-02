@@ -57,6 +57,15 @@ const projects = [
     demo: "https://futbol-turnos-app.vercel.app/",
     tags: ["Typescript", "Tailwind", "Node.js","MongoDB"],
   },
+  {
+    title: "StockControl",
+    image: "./projects/stockcontrol.jpg",
+    description:
+      'Sistema de gestión de inventario con Django. Administra proveedores y productos de forma centralizada. Incluye búsqueda, filtrado, ordenamiento y indicadores visuales de stock bajo. Interfaz responsive Bootstrap 5.',
+    github: "https://github.com/LucasParra95/stockcontrol",
+    demo: "",
+    tags: ["Python", "Django", "Bootstrap","SQLite"],
+  },
 ]
 
 export function ProjectsSection() {
