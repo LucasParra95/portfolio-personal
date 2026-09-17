@@ -4,14 +4,9 @@ import { Download } from "lucide-react";
 
 const timelineItems = [
   {
-    year: "2013-2021",
+    year: "2014-2020",
     title: "Tercer año de Ingeniería Mecánica",
     description: "Facultad de Ingeniería Universidad Nacional de La Plata",
-  },
-  {
-    year: "2022",
-    title: "Introducción a la programación",
-    description: "Fundación Telefónica",
   },
   {
     year: "2022-2023",
@@ -30,6 +25,16 @@ const timelineItems = [
     description:
       "Certificado otorgado por IBM y Guayerd por 255 horas de cursado y práctica profesional",
   },
+  {
+    year: "2024-2026",
+    title: "Experiencia profesional",
+    description: "Desarrollo Full Stack y análisis de datos en proyectos para distintas organizaciones.",
+  },
+  {
+    year: "2026",
+    title: "Python & Django",
+    description: "Aceleración Tech · 129 horas de formación y proyecto grupal",
+  },
 ];
 
 export function AboutSection() {
@@ -44,50 +49,28 @@ export function AboutSection() {
           {/* Text Content */}
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground mb-12">
             <p>
+              Soy{" "}
               <strong className="text-foreground">
-                La curiosidad siempre ha sido mi motor.
-              </strong>{" "}
-              Desde chico desmontaba juguetes para entender sus mecanismos, una
-              costumbre que marcó el inicio de mi interés por la tecnología y la
-              resolución de problemas.
-            </p>
-
-            <p>
-              Estudié{" "}
-              <strong className="text-foreground">Ingeniería Mecánica</strong>{" "}
-              en la Universidad Nacional de La Plata, donde desarrollé un
-              pensamiento lógico y una mentalidad analítica que hoy aplico en el
-              desarrollo de software. Esa formación me enseñó a abordar los
-              desafíos con{" "}
-              <strong className="text-foreground">
-                método, precisión y creatividad.
+                Desarrollador Web Full Stack y Analista de Datos
               </strong>
+              , con experiencia en el desarrollo de aplicaciones web, sistemas de
+              gestión, e-commerce y soluciones orientadas a datos.
             </p>
 
             <p>
-              Con el tiempo, descubrí en la programación una forma de unir mis
-              intereses técnicos con mi deseo de crear soluciones útiles e
-              innovadoras. Me certifiqué como{" "}
-              <strong className="text-foreground">Full Stack Developer</strong>{" "}
-              en Henry, lo que me permitió explorar un mundo de posibilidades
-              dentro del desarrollo web y la tecnología aplicada a la
-              optimización de procesos.
+              Cursé hasta tercer año de{" "}
+              <strong className="text-foreground">Ingeniería Mecánica</strong>{" "}
+              en la Universidad Nacional de La Plata, una experiencia que contribuyó a desarrollar mi 
+              pensamiento lógico y mi capacidad para abordar problemas de manera estructurada. 
+              Mi recorrido profesional y formativo se orientó posteriormente hacia el desarrollo de software y el análisis de datos, 
+              trabajando principalmente con JavaScript, TypeScript, React, Next.js, Node.js y SQL.
             </p>
 
             <p>
-              También he complementado mi perfil con un curso de{" "}
-              <strong className="text-foreground">Análisis de Datos</strong>,
-              con el objetivo de comprender mejor la información detrás de cada
-              proyecto y brindar soluciones más eficientes y fundamentadas.
-            </p>
-
-            <p>
-              Hoy, combino mi{" "}
-              <strong className="text-foreground">capacidad analítica</strong>{" "}
-              con una mirada creativa y orientada al detalle para desarrollar
-              herramientas tecnológicas que optimizan procesos, impulsan la toma
-              de decisiones y mejoran la experiencia del{" "}
-              <strong className="text-foreground">usuario</strong>.
+              En el último tiempo incorporé{" "}
+              <strong className="text-foreground">Python y Django</strong>{" "}
+              a mi stack para ampliar mis capacidades de desarrollo backend. Busco seguir incorporando nuevas herramientas y aplicarlas en 
+              proyectos que resuelvan problemas concretos, combinando desarrollo, análisis de datos y una mirada orientada a la mejora continua.
             </p>
           </div>
 

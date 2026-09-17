@@ -5,23 +5,28 @@ export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Content */}
-      <Terminal className="absolute 2xl:mr-120 right-10 top-15 w-[350px] h-[350px] text-primary opacity-1 z-10 animate-pulse-slow pointer-events-none"/>
+      <Terminal
+        className="absolute 2xl:mr-120 right-10 top-15 w-[350px] h-[350px] text-primary opacity-1 z-10 animate-pulse-slow pointer-events-none"
+      />
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="space-y-8 animate-fade-in-up">
           <div className="space-y-4">
-            <p className="text-muted-foreground font-medium text-lg md:text-xl">Hola, me llamo</p>
+            <p className="text-muted-foreground font-medium text-lg md:text-xl">
+              Hola, me llamo
+            </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground text-balance leading-tight">
               Lucas Andrés Parra
             </h1>
             <p className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light text-pretty">
-              Full Stack Web Developer
+              Full Stack Developer & Data Analyst
             </p>
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Desarrollador comprometido con crear soluciones tecnológicas innovadoras que combinan eficiencia, 
-            claridad y una interacción fluida y agradable.
+            Desarrollo aplicaciones web y soluciones orientadas a datos,
+            combinando desarrollo frontend, backend y análisis para resolver
+            problemas concretos.
           </p>
 
           <div className="pt-8 flex flex-col sm:flex-row gap-4">
