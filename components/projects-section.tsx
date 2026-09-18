@@ -63,8 +63,17 @@ const projects = [
     description:
       'Sistema de gestión de inventario con Django. Administra proveedores y productos de forma centralizada. Incluye búsqueda, filtrado, ordenamiento y indicadores visuales de stock bajo. Interfaz responsive Bootstrap 5.',
     github: "https://github.com/LucasParra95/stockcontrol",
-    demo: "",
+    demo: "https://stockcontrol-tau.vercel.app/compras/productos/listado",
     tags: ["Python", "Django", "Bootstrap","SQLite"],
+  },
+  {
+    title: "Grupo 5",
+    image: "./projects/grupocinco.jpg",
+    description:
+      'Plataforma de reservas de servicios para eventos. Permite registrar servicios, empleados y clientes; gestionar reservas y visualizar listados. Incluye API REST para consultar servicios y filtrar por ID. Proyecto grupal Alkemy en Python/Django.',
+    github: "https://github.com/LucasParra95/proyecto-python-django",
+    demo: "",
+    tags: ["Python", "Django", "Django REST Framework", "Bootstrap","SQLite"],
   },
 ]
 
