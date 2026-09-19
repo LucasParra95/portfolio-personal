@@ -16,11 +16,41 @@ export function ContactSection() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle")
+
+  const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault()
-    // Create mailto link
-    const mailtoLink = `mailto:parra.developer@gmail.com?subject=Contacto desde Portfolio - ${formData.name}&body=${formData.message}%0D%0A%0D%0ADe: ${formData.name} (${formData.email})`
-    window.location.href = mailtoLink
+
+    setStatus("sending")
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || "No se pudo enviar el mensaje.")
+      }
+
+      setStatus("success")
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      })
+    } catch (error) {
+      console.error(error)
+      setStatus("error")
+    }
   }
 
   return (
@@ -67,10 +97,21 @@ export function ContactSection() {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full group">
+                <Button type="submit" className="w-full group" disabled={status === "sending"}>
                   <Send className="mr-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Enviar mensaje
+                  {status === "sending" ? "Enviando..." : "Enviar mensaje"}
                 </Button>
+                {status === "success" && (
+                  <p className="text-sm text-green-600 text-center">
+                    ¡Mensaje enviado correctamente! Me pondré en contacto pronto.
+                  </p>
+                )}
+
+                {status === "error" && (
+                  <p className="text-sm text-red-600 text-center">
+                    No se pudo enviar el mensaje. Por favor, intentá nuevamente.
+                  </p>
+                )}
               </form>
             </CardContent>
           </Card>
