@@ -3,41 +3,23 @@ import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
-  {
-    title: "Countries App",
-    image: "./projects/countries.png",
+    {
+    title: "Grupo 5",
+    image: "./projects/grupocinco.jpg",
     description:
-      'Proyecto individual desarrollado dentro de Henry Bootcamp. Desarrollo de una SPA (Single Page Application) utilizando React para el Front End y Redux como state management. Todos los componentes fueron desarrollados con CSS sin uso de librerías externas. La SPA consume datos de una API ("REST Countries").',
-    github: "https://github.com/LucasParra95/PI-Countries-SoyHenry",
-    demo: null,
-    tags: ["React", "Redux", "CSS", "API REST"],
+      'Plataforma de reservas de servicios para eventos. Permite registrar servicios, empleados y clientes; gestionar reservas y visualizar listados. Incluye API REST para consultar servicios y filtrar por ID. Proyecto grupal Alkemy en Python/Django.',
+    github: "https://github.com/LucasParra95/proyecto-python-django",
+    demo: "",
+    tags: ["Python", "Django", "Django REST Framework", "Bootstrap","SQLite"],
   },
   {
-    title: "AllTech e-commerce",
-    image: "./projects/AllTech.jpg",
+    title: "StockControl",
+    image: "./projects/stockcontrol.jpg",
     description:
-      "Proyecto grupal desarrollado dentro de Henry Bootcamp. Diseño y desarrollo de un E-commerce dedicado a la venta de productos gaming cómo su principal fuente de ingresos y otros artículos electrónicos cómo fuente secundaria. Aplicación creada usando MongoDB y Mongoose junto con Node.js para el Back-End, mientras que para el Front-End se utilizó React, Redux, Chakra y Typescript.",
-    github: "https://github.com/zodieth/CLIENT",
-    demo: "https://client-ochre-five.vercel.app/",
-    tags: ["MongoDB", "Node.js", "React", "TypeScript"],
-  },
-  {
-    title: "Basket de Oficina",
-    image: "./projects/basketProject.jpg",
-    description:
-      "Juego desarrollado en JavaScript a partir de uno existente, añadiendo funcionalidades al original, como son la lógica del ciclo de vida, el sistema del viento, o la implementación de un nuevo ciclo de juego.",
-    github: "https://github.com/LucasParra95/Trash-Can-Basketball",
-    demo: "https://trash-can-basketball.vercel.app",
-    tags: ["JavaScript", "HTML5", "CSS3"],
-  },
-  {
-    title: "Zanutto Estudio",
-    image: "./projects/Zanutto.jpg",
-    description:
-      'Sitio web profesional desarrollado para un estudio jurídico, incluyendo un sistema de turnos para múltiples sucursales. La plataforma permite gestionar disponibilidad, asignación de citas y administración interna, ofreciendo una experiencia clara y ágil tanto para los clientes como para el estudio.',
-    github: "https://github.com/zodieth/zanuttoestudio",
-    demo: "https://zanuttoestudio.vercel.app/",
-    tags: ["React", "Next.js", "MongoDB", "Node.js"],
+      'Sistema de gestión de inventario con Django. Administra proveedores y productos de forma centralizada. Incluye búsqueda, filtrado, ordenamiento y indicadores visuales de stock bajo. Interfaz responsive Bootstrap 5.',
+    github: "https://github.com/LucasParra95/stockcontrol",
+    demo: "https://stockcontrol-tau.vercel.app/compras/productos/listado",
+    tags: ["Python", "Django", "Bootstrap","SQLite"],
   },
   {
     title: "Hotel Océano",
@@ -58,22 +40,22 @@ const projects = [
     tags: ["Typescript", "Tailwind", "Node.js","MongoDB"],
   },
   {
-    title: "StockControl",
-    image: "./projects/stockcontrol.jpg",
+    title: "Basket de Oficina",
+    image: "./projects/basketProject.jpg",
     description:
-      'Sistema de gestión de inventario con Django. Administra proveedores y productos de forma centralizada. Incluye búsqueda, filtrado, ordenamiento y indicadores visuales de stock bajo. Interfaz responsive Bootstrap 5.',
-    github: "https://github.com/LucasParra95/stockcontrol",
-    demo: "https://stockcontrol-tau.vercel.app/compras/productos/listado",
-    tags: ["Python", "Django", "Bootstrap","SQLite"],
+      "Juego desarrollado en JavaScript a partir de uno existente, añadiendo funcionalidades al original, como son la lógica del ciclo de vida, el sistema del viento, o la implementación de un nuevo ciclo de juego.",
+    github: "https://github.com/LucasParra95/Trash-Can-Basketball",
+    demo: "https://trash-can-basketball.vercel.app",
+    tags: ["JavaScript", "HTML5", "CSS3"],
   },
   {
-    title: "Grupo 5",
-    image: "./projects/grupocinco.jpg",
+    title: "Zanutto Estudio",
+    image: "./projects/Zanutto.jpg",
     description:
-      'Plataforma de reservas de servicios para eventos. Permite registrar servicios, empleados y clientes; gestionar reservas y visualizar listados. Incluye API REST para consultar servicios y filtrar por ID. Proyecto grupal Alkemy en Python/Django.',
-    github: "https://github.com/LucasParra95/proyecto-python-django",
-    demo: "",
-    tags: ["Python", "Django", "Django REST Framework", "Bootstrap","SQLite"],
+      'Sitio web profesional desarrollado para un estudio jurídico, incluyendo un sistema de turnos para múltiples sucursales. La plataforma permite gestionar disponibilidad, asignación de citas y administración interna, ofreciendo una experiencia clara y ágil tanto para los clientes como para el estudio.',
+    github: "https://github.com/zodieth/zanuttoestudio",
+    demo: "https://zanuttoestudio.vercel.app/",
+    tags: ["React", "Next.js", "MongoDB", "Node.js"],
   },
 ]
 
