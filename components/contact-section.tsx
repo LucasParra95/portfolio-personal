@@ -14,6 +14,7 @@ export function ContactSection() {
     name: "",
     email: "",
     message: "",
+    website: "",
   })
 
   const [status, setStatus] = useState<
@@ -46,6 +47,7 @@ export function ContactSection() {
         name: "",
         email: "",
         message: "",
+        website: "",
       })
     } catch (error) {
       console.error(error)
@@ -95,6 +97,23 @@ export function ContactSection() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
+                  />
+                </div>
+                <div
+                  aria-hidden="true"
+                  className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden"
+                >
+                  <label htmlFor="website">Website</label>
+                  <Input
+                    id="website"
+                    type="text"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={formData.website}
+                    onChange={(e) =>
+                      setFormData({ ...formData, website: e.target.value })
+                    }
                   />
                 </div>
                 <Button type="submit" className="w-full group" disabled={status === "sending"}>
