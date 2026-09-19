@@ -9,7 +9,7 @@ const projects = [
     description:
       'Plataforma de reservas de servicios para eventos. Permite registrar servicios, empleados y clientes; gestionar reservas y visualizar listados. Incluye API REST para consultar servicios y filtrar por ID. Proyecto grupal Alkemy en Python/Django.',
     github: "https://github.com/LucasParra95/proyecto-python-django",
-    demo: "",
+    demo: "https://proyecto-python-django.vercel.app/servicios/servicios",
     tags: ["Python", "Django", "Django REST Framework", "Bootstrap","SQLite"],
   },
   {
