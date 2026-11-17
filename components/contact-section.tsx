@@ -183,7 +183,7 @@ export function ContactSection() {
 
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Lucas Andrés Parra.</p>
+          <p>{new Date().getFullYear()} Lucas Andrés Parra.</p>
         </div>
       </div>
     </section>
